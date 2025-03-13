@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="MATRICULA ALUMNOS"
@@ -20,11 +21,25 @@
         app:layout_constraintVertical_bias="0.071" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="197dp"
-        android:layout_height="285dp"
-        app:srcCompat="@drawable/formulario"
-        tools:layout_editor_absoluteX="107dp"
-        tools:layout_editor_absoluteY="116dp" />
+        android:id="@+id/imageButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/formulario" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="196dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/carpeta" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
