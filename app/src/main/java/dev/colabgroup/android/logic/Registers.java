@@ -19,20 +19,22 @@ public class Registers {
     public static class Register {
         private Long id;
         private String names;
-        private String surnames;
         private Integer dni;
-        private Integer celphoneNumber;
+        private Integer age;
+        private String address;
+        private String course;
 
         public Register() {
             this.id = generateUUID();
         }
 
-        public Register(String names, String surnames, Integer dni, Integer celphoneNumber) {
+        public Register(String names, Integer dni, Integer age, String address, String course) {
             this.id = generateUUID();
             this.names = names;
-            this.surnames = surnames;
             this.dni = dni;
-            this.celphoneNumber = celphoneNumber;
+            this.age = age;
+            this.address = address;
+            this.course = course;
         }
 
         public Long getId() {
@@ -51,14 +53,6 @@ public class Registers {
             this.names = names;
         }
 
-        public String getSurnames() {
-            return surnames;
-        }
-
-        public void setSurnames(String surnames) {
-            this.surnames = surnames;
-        }
-
         public Integer getDni() {
             return dni;
         }
@@ -67,12 +61,28 @@ public class Registers {
             this.dni = dni;
         }
 
-        public Integer getCelphoneNumber() {
-            return celphoneNumber;
+        public Integer getAge() {
+            return age;
         }
 
-        public void setCelphoneNumber(Integer celphoneNumber) {
-            this.celphoneNumber = celphoneNumber;
+        public void setAge(Integer age) {
+            this.age = age;
+        }
+
+        public String getAddress() {
+            return address;
+        }
+
+        public void setAddress(String address) {
+            this.address = address;
+        }
+
+        public String getCourse() {
+            return course;
+        }
+
+        public void setCourse(String course) {
+            this.course = course;
         }
     }
 
